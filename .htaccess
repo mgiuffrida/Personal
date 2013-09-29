@@ -1,0 +1,22 @@
+
+# ----------------------------------------------------------------------
+# Webfont access
+# ----------------------------------------------------------------------
+ 
+# allow access from all domains for webfonts
+# alternatively you could only whitelist
+#   your subdomains like "sub.domain.com"
+ 
+<FilesMatch "\.(ttf|otf|eot|woff|font.css)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+
+ 
+# webfont mime types
+AddType application/octet-stream  eot
+AddType application/octet-stream                  ttf
+AddType font/opentype                  otf
+AddType application/x-font-woff              woff
+ 

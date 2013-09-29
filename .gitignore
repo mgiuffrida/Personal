@@ -1,0 +1,9 @@
+# Ignore webfonts
+*.eot
+*.otf
+*.svg
+*.ttf
+*.TTF
+*.woff
+
+ettf*

@@ -1,0 +1,26 @@
+body {
+  min-width: 1000px;
+}
+
+#pane {
+  display: inline-block;
+  width: 400px;
+}
+
+#content {
+  vertical-align: top;
+  position: relative;
+  width: 500px;
+  display: inline-block;
+  margin-left: 55px;
+}
+
+#books .booklist {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#books h3 {
+  margin-top: 0;
+}

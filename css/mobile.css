@@ -1,0 +1,21 @@
+#pane #nav {
+  display: none;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: 'MyriadPro-Bold';
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#content ul {
+  margin-left: 0;
+  padding-left: 30px;
+}
+
+#content ul li {
+  margin-left: 0;
+  padding-left: 0;
+  margin-left: -.6em;
+}
