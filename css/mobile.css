@@ -1,5 +1,5 @@
-#pane #nav {
-  display: none;
+#outer {
+  flex-direction: column;
 }
 
 h1 {
@@ -18,4 +18,34 @@ h1 {
   margin-left: 0;
   padding-left: 0;
   margin-left: -.6em;
+}
+
+#about ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about ul li {
+  margin-right: 0.5em;
+}
+
+#about ul li a {
+  display: flex;
+  align-items: center;
+}
+
+#about ul li .label {
+  display: none;
+}
+
+#about ul + p {
+  -webkit-margin-before: 0.3em;
+}
+
+.date::before {
+  content: '(';
+}
+
+.date::after {
+  content: ')';
 }

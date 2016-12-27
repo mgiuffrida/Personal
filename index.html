@@ -1,79 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
+<meta charset="utf-8">
 <title>Michael Giuffrida</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Michael Giuffrida, software developer.">
 
-<link rel="stylesheet"
-      href="css/common.css" type="text/css" />
-<link rel="stylesheet" media="(min-width: 401px)"
-      href="css/main.css" type="text/css" />
-<link rel="stylesheet" media="(max-width: 400px)"
-      href="css/mobile.css" type="text/css" />
+<link rel="stylesheet" href="css/common.css" type="text/css">
+<link rel="stylesheet" media="(min-width: 1000px)" href="css/main.css" type="text/css">
+<link rel="stylesheet" media="(max-width: 999px)" href="css/mobile.css" type="text/css">
 
 <script src="js/main.js" type="text/javascript"></script>
 </head>
-<body>
+
+<body class="loading" itemscope itemtype="http://schema.org/WebPage" itemid="http://mgiuffrida.com">
+
+<div id="outer" itemprop="mainEntity" itemscope itemtype="http://schema.org/Person" itemid="#me">
+<meta itemprop="url" content="http://mgiuffrida.com">
 
 <div id="pane">
 
 <div id="about">
-  <h1><span class="first">Michael</span> Giuffrida</h1>
+  <h1 itemprop="name"><span itemprop="givenName">Michael</span> <span itemprop="familyName">Giuffrida</span></h1>
 
-  <p>Software developer at Google.</p>
-  <p>Current project:
-    <a href="http://www.chromium.org/chromium-os" target="_blank">
-      chromium-os</a>.
+  <h2 class="heading-title">
+    <span itemprop="jobTitle">Software developer</span>
+    at
+    <span itemprop="worksFor" itemscope itemtype="http://schema.org/Corporation">
+      <span itemprop="name">Google</span>.
+    </span>
+  </h2>
+  <p>
+    I work on
+    <span itemscope itemtype="http://schema.org/WebPage" itemid="http://mgiuffrida.com">
+    <span itemprop="about" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+      <link itemprop="contributor" href="#me">
+      <meta itemprop="codeRepository" content="https://cs.chromium.org/chromium">
+
+      <a itemprop="url" href="https://www.chromium.org/chromium-os" target="_blank">
+        <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+          <span itemprop="name">Google</span>
+        </span>
+        <span itemprop="name">Chrome <span itemprop="genre">OS</span></span>
+      </a>
+    </span>
+    UI and the Chrome Apps platform making
+    <a href="https://en.wikipedia.org/wiki/Chromebook" target="_blank">Chromebooks</a>
+    useful and simple.
+  </span>
   </p>
 
   <ul>
-    <li><a class="button" target="_blank" href="https://www.linkedin.com/in/mgiuffrida"><img title="LinkedIn" src="images/linkedin.png" alt="" /><span class="label">LinkedIn</span></a></li>
-    <li><a class="button" target="_blank" href="https://facebook.com/mgiuffrida"><img title="Facebook" src="images/fb.png" alt="" /><span class="label">Facebook</span></a></li>
-    <li><a class="button" target="_blank" href="https://www.vizify.com/michael-giuffrida"><img title="Vizify" src="images/vizify-yellow.png" alt="" /><span class="label">Vizify</span></a></li>
-    <li><a class="button" target="_blank" href="https://github.com/mgiuffrida"><img title="Github" src="images/github.png" alt="" /><span class="label">Github</span></a></li>
-    <li><a class="button" target="_blank" href="https://codereview.chromium.org/search?closed=1&owner=michaelpg%40chromium.org&reviewer=&cc=&repo_guid=&base=&private=1&commit=1&created_before=&created_after=&modified_before=&modified_after=&order=&format=html&keys_only=False&with_messages=False&cursor=&limit=30"><img title="Chromium" src="images/chrome.png" alt="" /><span class="label">Chromium</span></a></li>
+    <li><a itemprop="sameAs" class="button" target="_blank" href="https://mgiuffrida.github.io"><img title="Blog" src="images/blog-icon-200.png" alt="Blog"><span class="label">Blog</span></a></li>
+    <li><a itemprop="sameAs" class="button" target="_blank" href="https://github.com/mgiuffrida"><img title="Github" src="images/GitHub-Mark-64px.png" alt="GitHub"><span class="label">Github</span></a></li>
+    <li><a itemprop="sameAs" class="button" target="_blank" href="https://www.linkedin.com/in/mgiuffrida"><img title="LinkedIn" src="images/linkedin.png" alt="LinkedIn"><span class="label">LinkedIn</span></a></li>
+    <li><a itemprop="sameAs" class="button" target="_blank" href="https://facebook.com/mgiuffrida"><img title="Facebook" src="images/fb.png" alt="Facebook"><span class="label">Facebook</span></a></li>
+    <li><a class="button" target="_blank" href="https://codereview.chromium.org/search?closed=1&owner=michaelpg%40chromium.org&reviewer=&cc=&repo_guid=&base=&private=1&commit=1&created_before=&created_after=&modified_before=&modified_after=&order=&format=html&keys_only=False&with_messages=False&cursor=&limit=30"><img title="Chromium" src="images/chromium_64.png" alt="Chromium commits"><span class="label">Chromium</span></a></li>
   </ul>
 
   <p>C&#111;nt&#97;ct: <a href="http://www.google.com/recaptcha/mailhide/d?k=01z5jbOeEVSwfVRHJegaR07A==&amp;c=24TspmqjQaRoBcHyyZ6xPtuyTSL2zwNH04y4O22IEPw=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501z5jbOeEVSwfVRHJegaR07A\75\75\46c\07524TspmqjQaRoBcHyyZ6xPtuyTSL2zwNH04y4O22IEPw\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">m...</a>@mgiuffrida.com</p>
 
 </div> <!-- about -->
 
-<div id="nav">
-  <ul>
-    <li><strong>Resume</strong></li>
-    <li><strong>Undergraduate projects</strong> for the lulz</li>
-    <li><strong>Books</strong> I like</li>
-    <li><strong>Games</strong> I'm into</li>
-  </ul>
-</div>
-
 </div> <!-- pane -->
 
 <div id="content">
 
-<!--
-<div id="intro">
-Hello...
-</div>--> <!-- intro -->
-
 <div id="resume">
   <h2>Resume</h2>
 
-  <a href="mgiuffrida_resume.pdf">Download resume (PDF)</a> or contact for more details
+  <p><a href="mgiuffrida_resume.pdf">Download resume (PDF)</a> or contact for more details</p>
 
   <h2>Education</h2>
 
-  <p><strong>Yale University:</strong> B.S. Computer Science, <span class="date">2013</span></p>
+  <p itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+    <strong><span itemprop="name">Yale University</span>:</strong>
+    B.S.
+    <span itemprop="department" itemscope itemtype="http://schema.org/Organization">
+      <span itemprop="name">Computer Science</span> <span class="date">2013</span>
+    </span>
+  </p>
 
-  <h2>Work Experience</h2>
+  <h2>Work</h2>
 
-  <p><strong>Google:</strong> Software Engineer, <span class="date">Fall 2013 - present</span></p>
-  <p class="details">Developing the next generation of OS user experiences with ChromeOS.</p>
+  <p><strong>Google:</strong> Software Engineer <span class="date">Fall 2013 - present</span></p>
+  <p class="details">Developing the next generation of user experiences with Chrome and Chrome OS.</p>
 
   <p>
     <span class="place"><strong>Yale University:</strong></span>
-    <span class="titles">Peer Tutor, <span class="date">Spring 2013</span><br/>Student Tech, <span class="date">~2010 - 2011</span></span>
+    <span class="titles">Peer Tutor <span class="date">Spring 2013</span><br/>Student Tech <span class="date">~2010 - 2011</span></span>
   </p>
 
   <p><strong>Microsoft:</strong> Software Development Engineer Intern</p>
@@ -81,11 +96,11 @@ Hello...
   <p class="details"><span class="instance">Summer 2011: </span><span class="work">UI and logic for Windows 8 Calendar app (creating events and sending invites)</span></p>
   <p class="details"><span class="instance">Summer 2010: </span><span class="work">UI for Windows Live Messenger</span></p>
 
-  <h2>Skills</h2>
+  <h2>Coding</h2>
 
-  <p>Experienced in C, C++, JavaScript, CSS, and SQL<br>
-     Moderately experienced with Python and PHP<br>
-     Previous experience includes C# and Java</p>
+  <p>Experienced in C, C++, JavaScript, CSS<br>
+     Moderately experienced with Python, PHP, SQL<br>
+     Previous experience includes C# and Java, among others.</p>
 
 </div> <!-- resume -->
 
@@ -97,58 +112,23 @@ Hello...
 
   <p><strong><a class="plain" href="http://mgiuffrida.com/ssk">SSK (senior project in machine learning)</a>:</strong> <a href="http://mgiuffrida.com/ssk">String Subsequence Kernel for Text Classification</a></p>
 
-  <p><strong><a class="plain" href="http://mgiuffrida.com/game">Sphere Killer</a>:</strong> <a href="http://mgiuffrida.com/game">First-person shooter</a> using OpenGL for CPSC 478, Computer Graphics.</p>
+  <p><strong><a class="plain" href="http://mgiuffrida.com/game">Sphere Killer</a>:</strong> <a href="http://mgiuffrida.com/game">Basic shooter game</a> using OpenGL for CPSC 478, Computer Graphics.</p>
 
   <p><strong><a class="plain" href="http://mgiuffrida.com/privacy">Privacy Icons</a>:</strong> Prototype <a href="http://mgiuffrida.com/privacy">privacy icon database</a> extension for <a target="_blank" href="http://www.yalelawtech.org/cpt/">CPSC 185, Control, Privacy & Technology</a>.</p>
 
 </div> <!-- projects -->
 
-<div id="books">
-  <h2>Books</h2>
-
-  <div class="booklist">
-    <h3>Reading:</h3>
-
-    <ul>
-      <li><a href="http://www.amazon.com/gp/product/0321334876" target="_blank">Effective C++</a></li>
-      <li><a href="http://www.amazon.com/gp/product/0201633612" target="_blank">Design Patterns</a></li>
-    </ul>
-  </div>
-
-  <div class="booklist">
-    <h3>Bookshelf:</h3>
-    <ul>
-      <li><a href="http://www.catb.org/esr/writings/taoup/html/" target="_blank">The Art of Unix Programming</a></li>
-      <li><a href="http://web.mit.edu/~simsong/www/ugh.pdf" target="_blank">The Unix-Haters Handbook</a></li>
-    </ul>
-</div>
-
-</div> <!-- books -->
-
-<div id="games">
-  <h2>Games</h2>
-
-  <div class="gameslist">
-    <h3>Top games, by playtime</h3>
-    <ul>
-      <li>Left 4 Dead 2</li>
-      <li>TESV: Skyrim</li>
-      <li>Battlefield: Bad Company 2</li>
-      <li>Fallout 3</li>
-      <li>Mass Effect 2</li>
-      <li>Just Cause 2</li>
-      <li>TES4: Oblivion</li>
-      <li>Team Fortress 2</li>
-      <li>Star Wars: KOTOR</li>
-      <li>Civilization IV</li>
-    </ul>
-  </div>
-
-</div> <!-- games -->
-
 </div> <!-- content -->
 
+</div> <!-- outer -->
+
 <script type="text/javascript">
+  // Wait for the page to finish loading, with a max timeout of 2s.
+  function showBody() {
+    document.body.classList.remove('loading');
+  };
+  window.addEventListener('load', showBody);
+  setTimeout(showBody, 2000);
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-38769351-1']);

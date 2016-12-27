@@ -1,13 +1,4 @@
 @font-face {
-  font-family: 'MyriadPro-bold';
-  src: url('../fonts/MYRIADAB.TTF') format('truetype'),
-       url('../fonts/myriadpro-bold.otf') format('opentype'),
-       url('../fonts/myriadpro-bold.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'MyriadPro';
   src: url('../fonts/MYRIADAT.TTF') format('truetype'),
        url('../fonts/myriadpro-regular.otf') format('opentype'),
@@ -17,76 +8,73 @@
 }
 
 @font-face {
-  font-family: 'MyriadPro-boldcond';
-  src: url('../fonts/myriadpro-boldcond.otf') format('opentype'),
-       url('../fonts/myriadpro-boldcond.svg') format('svg'),
-       url('../fonts/myriadpro-boldcond.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MyriadPro-cond';
-  src: url('../fonts/myriadpro-cond.otf') format('opentype'),
-       url('../fonts/myriadpro-cond.svg') format('svg'),
-       url('../fonts/myriadpro-cond.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'MyriadPro-semibold';
-  src: url('../fonts/myriadpro-semibold.otf') format('opentype'),
-       url('../fonts/myriadpro-semibold.svg') format('svg'),
-       url('../fonts/myriadpro-semibold.ttf') format('truetype');
+  font-family: 'MyriadPro-bold';
+  src: url('../fonts/MYRIADAB.TTF') format('truetype'),
+       url('../fonts/myriadpro-bold.otf') format('opentype'),
+       url('../fonts/myriadpro-bold.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  background-color: #dde9f6; /*#dddddd;*/
+  background-color: #dde9f6;
   color: #000000;
   font-size: 18px;
   font-family: 'MyriadPro', Tahoma, Verdana, sans-serif;
-  padding: 10px;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
-#pane #about,
-#pane #nav {
- padding: 10px 10px 10px 10px;
+#outer {
+  display: flex;
+  margin: 18px;
+  opacity: 1;
+  transition: opacity .01s;
 }
 
-#pane #nav { display: none; }
+body.loading #outer {
+  /* Begin with 0 opacity to avoid FOUC before fonts load. */
+  opacity: 0;
+}
+
+#pane > div {
+ padding: 15px;
+}
 
 #pane #about {
-  padding-top: 0;
+  padding-top: 10px;
 }
 
 #content > div {
- padding: 10px 10px 15px 10px;
-/* border: 1px solid #cccccc;*/
+ padding: 15px 0;
 }
 
+#content > div > * {
+ padding: 0 15px;
+}
 
 #header,
 #pane > div,
 #content > div {
  background-color: #ffffff;
  margin-bottom: 20px;
- box-shadow: 2px 4px 3px #cccccc;
- border-radius: 5px;
- border-top-left-radius: 2px;
- border-top-right-radius: 2px;
+ box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+             0 1px 5px 0 rgba(0, 0, 0, 0.12),
+             0 3px 1px -2px rgba(0, 0, 0, 0.2);
+ border-radius: 2px;
 }
 
 p {
   margin-bottom: 0;
 }
 
-li img {
-  vertical-align: middle;
-  margin-right: .5em;
+h2.heading-title {
+  margin-bottom: 0;
+  font-size: inherit;
+  font-family: 'MyriadPro', Tahoma, Verdana, sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 #about ul {
@@ -98,8 +86,13 @@ li img {
   margin-bottom: 8px;
 }
 
-#about li .label {
-  vertical-align: middle;
+#about ul li img {
+  margin-right: .5em;
+}
+
+#about ul li a {
+  display: flex;
+  align-items: center;
 }
 
 #content ul {
@@ -134,9 +127,11 @@ h2 {
 }
 
 #resume h2:not(:first-child) {
+  border-top: 1px solid #e8e8e8;
   font-weight: normal;
   margin-bottom: 0;
-  margin-top: .75em;
+  margin-top: .5em;
+  padding-top: 15px;
 }
 
 #resume .details {
@@ -154,21 +149,17 @@ h2 {
   display: inline-block;
 }
 
-.date {
-  font-size: 85%;
-  margin-left: 4px;
-}
-
 img {
   border: 0;
 }
 
-.first {
+.first,
+#about h1 > :first-child {
   color: #b80c00;
 }
 
 a {
-  color: #b80c00; /*#bb0000;*/
+  color: #b80c00;
   text-decoration: none;
 }
 
@@ -176,6 +167,11 @@ a:hover,
 a:active,
 a:focus {
   color: #ff0000;
+}
+
+a.button img {
+  width: 32px;
+  height: 32px;
 }
 
 a.button:active img:active,
