@@ -1,19 +1,5 @@
-#pane {
-  flex: 0 0 400px;
-  margin-right: 18px;
-}
-
-#content {
-  vertical-align: top;
-  position: relative;
-  min-width: 500px;
-  display: inline-block;
-  flex: 1;
-  max-width: 1000px;
-}
-
-#content .timeline {
-  display: none;
+#vitals .timeline {
+  display: block;
 }
 
 #books .booklist {

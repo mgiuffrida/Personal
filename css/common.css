@@ -47,31 +47,45 @@ body.loading #outer {
   opacity: 0;
 }
 
-#pane > div {
- padding: 15px;
+#vitals {
+  margin-right: 18px;
+  flex: 0 0 400px;
 }
 
-#pane #about {
+#right {
+  vertical-align: top;
+  position: relative;
+  min-width: 500px;
+  display: inline-block;
+  flex: 1;
+  max-width: 1000px;
+}
+
+#vitals > div {
+  padding: 15px;
+}
+
+#vitals #intro {
   padding-top: 10px;
 }
 
-#content > div {
- padding: 15px 0;
+#right > div {
+  padding: 15px 0;
 }
 
-#content > div > * {
- padding: 0 15px;
+#right > div > * {
+  padding: 0 15px;
 }
 
 #header,
-#pane > div,
-#content > div {
- background-color: #ffffff;
- margin-bottom: 20px;
- box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-             0 1px 5px 0 rgba(0, 0, 0, 0.12),
-             0 3px 1px -2px rgba(0, 0, 0, 0.2);
- border-radius: 2px;
+#vitals > div,
+#right > div {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
 }
 
 p {
@@ -84,30 +98,30 @@ h2.heading-title {
   margin-top: 10px;
 }
 
-#about ul {
+#intro ul {
   list-style-type: none;
   padding: 0;
 }
 
-#about li {
+#intro li {
   margin-bottom: 8px;
 }
 
-#about ul li img {
+#intro ul li img {
   margin-right: .5em;
 }
 
-#about ul li a {
+#intro ul li a {
   display: flex;
   align-items: center;
 }
 
-#content ul {
+#right ul {
   margin-left: 0;
   padding-left: 30px;
 }
 
-#content ul li {
+#right ul li {
   margin-left: 0;
   padding-left: 4px;
   margin-left: -.6em;
@@ -155,13 +169,12 @@ h2 {
   display: inline-block;
 }
 
-img {
-  border: 0;
+.timeline {
+  display: none;
 }
 
-.first,
-#about h1 > :first-child {
-  color: #b80c00;
+img {
+  border: 0;
 }
 
 a {
@@ -189,4 +202,22 @@ a.button:focus img:focus {
 a.plain,
 #books .booklist a {
   color: #000000 !important;
+}
+
+abbr[title] {
+  /* Firefox and others include text-decoration: dotted underline here. Replace
+   * with border-bottom to get the same look everywhere. */
+  text-decoration: none !important;
+  border-bottom: 1px dotted;
+  cursor: help;
+  display: inline-block;
+  line-height: 75%;
+}
+
+.date::before {
+  content: '(';
+}
+
+.date::after {
+  content: ')';
 }

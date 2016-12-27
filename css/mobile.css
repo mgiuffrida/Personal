@@ -2,53 +2,50 @@
   flex-direction: column;
 }
 
+#vitals {
+  flex: initial;
+  margin-right: initial;
+}
+
 h1 {
   font-size: 48px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-#content ul {
+#right ul {
   margin-left: 0;
   padding-left: 30px;
 }
 
-#content ul li {
+#right ul li {
   margin-left: 0;
   padding-left: 0;
   margin-left: -.6em;
 }
 
-#about ul {
+#intro ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-#about ul li {
+#intro ul li {
   margin-right: 0.5em;
 }
 
-#about ul li a {
+#intro ul li a {
   display: flex;
   align-items: center;
 }
 
-#about ul li .label {
+#intro ul li .label {
   display: none;
 }
 
-#about ul + p {
+#intro ul + p {
   -webkit-margin-before: 0.3em;
 }
 
-#pane .timeline {
-  display: none;
-}
-
-.date::before {
-  content: '(';
-}
-
-.date::after {
-  content: ')';
+#right .timeline {
+  display: block;
 }
