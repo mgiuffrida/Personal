@@ -8,11 +8,20 @@
 }
 
 @font-face {
-  font-family: 'MyriadPro-bold';
+  font-family: 'MyriadPro';
   src: url('../fonts/MYRIADAB.TTF') format('truetype'),
        url('../fonts/myriadpro-bold.otf') format('opentype'),
        url('../fonts/myriadpro-bold.svg') format('svg');
-  font-weight: normal;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../fonts/MYRIADAM.TTF') format('truetype'),
+       url('../fonts/myriadpro-semibold.otf') format('opentype'),
+       url('../fonts/myriadpro-semibold.svg') format('svg');
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -72,8 +81,6 @@ p {
 h2.heading-title {
   margin-bottom: 0;
   font-size: inherit;
-  font-family: 'MyriadPro', Tahoma, Verdana, sans-serif;
-  font-weight: bold;
   margin-top: 10px;
 }
 
@@ -112,7 +119,6 @@ ul {
 
 h1 {
   font-size: 48px;
-  font-family: 'MyriadPro-Bold', Tahoma, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -128,7 +134,7 @@ h2 {
 
 #resume h2:not(:first-child) {
   border-top: 1px solid #e8e8e8;
-  font-weight: normal;
+  font-weight: 600;
   margin-bottom: 0;
   margin-top: .5em;
   padding-top: 15px;
@@ -183,9 +189,4 @@ a.button:focus img:focus {
 a.plain,
 #books .booklist a {
   color: #000000 !important;
-}
-
-strong {
-  font-family: MyriadPro-bold, Verdana, Tahoma, sans-serif;
-  font-weight: normal;
 }
