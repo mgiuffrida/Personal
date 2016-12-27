@@ -13,17 +13,6 @@ h1 {
   margin-bottom: 0;
 }
 
-#right ul {
-  margin-left: 0;
-  padding-left: 30px;
-}
-
-#right ul li {
-  margin-left: 0;
-  padding-left: 0;
-  margin-left: -.6em;
-}
-
 #intro ul {
   display: flex;
   flex-wrap: wrap;
@@ -48,4 +37,14 @@ h1 {
 
 #right .timeline {
   display: block;
+}
+
+#resume .titles {
+  font-weight: 600;
+  margin-left: 1.5em;
+  display: flex;
+}
+
+h3 + ul {
+  margin-left: 1.5em;
 }

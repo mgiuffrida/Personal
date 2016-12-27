@@ -18,8 +18,10 @@
 
   function replaceAbbrs() {
     var abbrs = document.querySelectorAll('abbr[title]');
-    for (var i = 0; i < abbrs.length; i++)
+    for (var i = 0; i < abbrs.length; i++) {
+      abbrs[i].addEventListener('touchstart', replaceAbbr);
       abbrs[i].addEventListener('mousedown', replaceAbbr);
+    }
   }
 
   function konami() {

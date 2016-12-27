@@ -37,7 +37,7 @@ body {
 
 #outer {
   display: flex;
-  margin: 18px;
+  padding: 18px;
   opacity: 1;
   transition: opacity .01s;
 }
@@ -55,7 +55,6 @@ body.loading #outer {
 #right {
   vertical-align: top;
   position: relative;
-  min-width: 500px;
   display: inline-block;
   flex: 1;
   max-width: 1000px;
@@ -70,11 +69,7 @@ body.loading #outer {
 }
 
 #right > div {
-  padding: 15px 0;
-}
-
-#right > div > * {
-  padding: 0 15px;
+  padding: 15px;
 }
 
 #header,
@@ -98,9 +93,12 @@ h2.heading-title {
   margin-top: 10px;
 }
 
+:not(li) > ul {
+  padding: 0;
+}
+
 #intro ul {
   list-style-type: none;
-  padding: 0;
 }
 
 #intro li {
@@ -116,19 +114,12 @@ h2.heading-title {
   align-items: center;
 }
 
-#right ul {
-  margin-left: 0;
-  padding-left: 30px;
-}
-
-#right ul li {
-  margin-left: 0;
-  padding-left: 4px;
-  margin-left: -.6em;
-}
-
 ul {
   margin-bottom: 0;
+}
+
+h3 + ul {
+  margin-top: 0.5em;
 }
 
 h1 {
@@ -137,7 +128,7 @@ h1 {
   margin-bottom: 0;
 }
 
-h2 {
+h2, h3 {
   margin-top: 0;
   margin-bottom: .5em;
 }
@@ -146,8 +137,9 @@ h2 {
   margin-top: .5em;
 }
 
-#resume h2:not(:first-child) {
+#resume h3 {
   border-top: 1px solid #e8e8e8;
+  font-size: 1.5em;
   font-weight: 600;
   margin-bottom: 0;
   margin-top: .5em;
@@ -156,17 +148,20 @@ h2 {
 
 #resume .details {
   margin-top: 0;
-  margin-left: 1.5em;
+  margin-left: 1.7045em;
+  padding: 0;
   font-size: 88%;
 }
 
 #resume .place {
   display: inline-block;
   vertical-align: top;
+  font-weight: bold;
 }
 
 #resume .titles {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .timeline {

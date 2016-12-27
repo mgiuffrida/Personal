@@ -17,3 +17,20 @@
   margin-left: 0.5em;
   opacity: 0.8;
 }
+
+.place:after {
+  content: ':';
+}
+
+/* No bullets for first list level. */
+ul {
+  list-style-type: none;
+}
+
+ul ul {
+  list-style-type: disc;
+}
+
+ul ul ul {
+  list-style-type: circle;
+}
