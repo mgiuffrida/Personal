@@ -16,12 +16,30 @@
       abbr.parentNode.replaceChild(span, abbr);
   }
 
-  function replaceAbbrs() {
+  function decorateAbbrs() {
     var abbrs = document.querySelectorAll('abbr[title]');
     for (var i = 0; i < abbrs.length; i++) {
       abbrs[i].addEventListener('touchstart', replaceAbbr);
       abbrs[i].addEventListener('mousedown', replaceAbbr);
+      abbrs[i].addEventListener('keypress', function(e) {
+        if (e.code == 'Enter' || e.keyCode == 'Enter' || e.charCode == 13)
+          replaceAbbr(e);
+      });
+      abbrs[i].setAttribute('tabindex', '0');
     }
+  }
+
+  // Removes the first timeline (shown in main view) from the tab order.
+  function twitterTabindex() {
+    var script = document.querySelector('#twitterScript');
+    script.src = script.dataset['src'];
+    script.onload = function() {
+      setTimeout(function() {
+        requestAnimationFrame(function() {
+          document.querySelector('iframe').setAttribute('tabindex', '-1');
+        });
+      }, 100);
+    };
   }
 
   function konami() {
@@ -60,6 +78,7 @@
     });
   }
 
-  window.addEventListener('load', replaceAbbrs);
+  window.addEventListener('load', decorateAbbrs);
   window.addEventListener('load', konami);
+  window.addEventListener('load', twitterTabindex);
 })();

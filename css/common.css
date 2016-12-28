@@ -38,13 +38,6 @@ body {
 #outer {
   display: flex;
   padding: 18px;
-  opacity: 1;
-  transition: opacity .01s;
-}
-
-body.loading #outer {
-  /* Begin with 0 opacity to avoid FOUC before fonts load. */
-  opacity: 0;
 }
 
 #vitals {
@@ -85,6 +78,12 @@ body.loading #outer {
 
 p {
   margin-bottom: 0;
+}
+
+#intro heading {
+  /* Ensure my name doesn't wrap. Normally the pane is wide enough, but not for
+   * the fallback font. */
+  white-space: nowrap;
 }
 
 h2.heading-title {
