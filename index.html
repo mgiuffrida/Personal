@@ -7,7 +7,7 @@
 <meta name="description" content="Michael Giuffrida: Software engineer at Google">
 
 <link rel="stylesheet" href="css/common.css" type="text/css">
-<link rel="stylesheet" media="(min-width: 1000px)" href="css/main.css" type="text/css">
+<link rel="stylesheet" media="(min-width: 1000px)" href="css/desktop.css" type="text/css">
 <link rel="stylesheet" media="(max-width: 999px)" href="css/mobile.css" type="text/css">
 
 <!-- html5 shim hack from afarkas, included in <head> after stylesheets: -->
@@ -17,117 +17,138 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/Person">
+<body>
+<main itemscope itemtype="http://schema.org/Person">
 
-<div id="outer">
+  <div id="info-panel">
 
-<div id="vitals">
+  <section id="intro">
+    <header>
+      <h1 itemprop="name"><a itemprop="url" href="http://mgiuffrida.com" tabindex="-1">Michael Giuffrida</a></h1>
+    </header>
 
-<div id="intro">
-  <heading>
-    <h1 itemprop="name"><a itemprop="url" href="http://mgiuffrida.com" tabindex="-1">Michael Giuffrida</a></h1>
-  </heading>
+    <p class="heading-title">
+      <span itemprop="jobTitle">Software engineer</span>
+      at
+      <span itemprop="worksFor" itemscope itemtype="http://schema.org/Corporation">
+        <span itemprop="name">Google</span>.
+      </span>
+    </p>
+    <p>
+      I make <a href="https://en.wikipedia.org/wiki/Chromebook" target="_blank">Chromebooks</a> more useful by improving
+      the <a href="https://www.chromium.org/chromium-os" target="_blank">Chrome OS</a> Apps platform and
+      <abbr title="user interface">UI</abbr>.
+    </p>
 
-  <h2 class="heading-title">
-    <span itemprop="jobTitle">Software engineer</span>
-    at
-    <span itemprop="worksFor" itemscope itemtype="http://schema.org/Corporation">
-      <span itemprop="name">Google</span>.
-    </span>
-  </h2>
-  <p>
-    I make <a href="https://en.wikipedia.org/wiki/Chromebook" target="_blank">Chromebooks</a> more useful by improving
-    the <a href="https://www.chromium.org/chromium-os" target="_blank">Chrome OS</a> Apps platform and
-    <abbr title="user interface">UI</abbr>.
-  </p>
-
-  <ul>
-    <li><a itemprop="sameAs" class="button" target="_blank" href="https://mgiuffrida.github.io"><img title="Blog" src="images/blog-icon-200.png" alt="Blog"><span class="label">Blog</span></a></li>
-    <li><a itemprop="sameAs" class="button" target="_blank" href="https://github.com/mgiuffrida"><img title="Github" src="images/GitHub-Mark-64px.png" alt="GitHub"><span class="label">Github</span></a></li>
-    <li><a itemprop="sameAs" class="button" target="_blank" href="https://www.linkedin.com/in/mgiuffrida"><img title="LinkedIn" src="images/linkedin.png" alt="LinkedIn"><span class="label">LinkedIn</span></a></li>
-    <li><a itemprop="sameAs" class="button" target="_blank" href="https://facebook.com/mgiuffrida"><img title="Facebook" src="images/fb.png" alt="Facebook"><span class="label">Facebook</span></a></li>
-    <li><a class="button" target="_blank" href="https://codereview.chromium.org/search?closed=1&owner=michaelpg%40chromium.org&reviewer=&cc=&repo_guid=&base=&private=1&commit=1&created_before=&created_after=&modified_before=&modified_after=&order=&format=html&keys_only=False&with_messages=False&cursor=&limit=30"><img title="Chromium" src="images/chromium_64.png" alt="Chromium commits"><span class="label">Chromium</span></a></li>
-  </ul>
-
-  <p>C&#111;nt&#97;ct: <a href="http://www.google.com/recaptcha/mailhide/d?k=01z5jbOeEVSwfVRHJegaR07A==&amp;c=24TspmqjQaRoBcHyyZ6xPtuyTSL2zwNH04y4O22IEPw=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501z5jbOeEVSwfVRHJegaR07A\75\75\46c\07524TspmqjQaRoBcHyyZ6xPtuyTSL2zwNH04y4O22IEPw\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">m...</a>@mgiuffrida.com</p>
-
-</div> <!-- intro -->
-
-<div class="timeline">
-  <a itemprop="sameAs" class="twitter-timeline" data-height="600" data-theme="light" data-link-color="#b80c00" href="https://twitter.com/mgiuffrida">Tweets by mgiuffrida</a>
-  <script id="twitterScript" data-src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-</div> <!-- vitals -->
-
-<div id="right">
-
-<div id="resume">
-  <h2>Resume</h2>
-
-  <p><a href="mgiuffrida_resume.pdf">Download resume (PDF)</a> or contact for more details</p>
-
-  <h3>Education</h3>
-
-  <p itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-    <strong><span itemprop="name">Yale University</span>:</strong>
-    <abbr title="Bachelor of Science in">B.S.</abbr>
-    <span itemprop="department" itemscope itemtype="http://schema.org/Organization">
-      <span itemprop="name">Computer Science</span>, 2013
-    </span>
-  </p>
-
-  <h3>Work</h3>
-
-  <p><span class="place">Google</span>
-    <span class="titles"><span>Software Engineer <span class="date">Fall 2013 - present</span></span></p>
-  <p class="details">Developing the next generation of user experiences with Chrome and Chrome OS.</p>
-
-  <p><span class="place">Microsoft</span> <span class="titles">Software Development Engineer Intern</span></p>
-  <ul class="details">
-    <li>Summer 2012: New features for Windows 8 People app</li>
-    <li>Summer 2011: UI and logic for Windows 8 Calendar app (creating events and sending invites)</li>
-    <li>Summer 2010: UI for Windows Live Messenger</li>
-  </ul>
-
-  <p>
-    <span class="place">Yale University</span>
-    <span class="titles">
-      <span>Peer Tutor <span class="date">Spring 2013</span></span>
-      <span>Student Tech <span class="date">~2010 - 2011</span></span>
-    </span>
-  </p>
-
-    <h3>Coding</h3>
     <ul>
-      <li>Experienced in C, C++, JavaScript, CSS</li>
-      <li>Moderately experienced with Python, PHP, SQL</li>
-      <li>Previous experience includes C# and Java, among others.</li>
+      <li><a itemprop="sameAs" class="button" target="_blank" href="https://mgiuffrida.github.io"><img title="Blog" src="images/blog-icon-200.png" alt="Blog"><span class="label">Blog</span></a></li>
+      <li><a itemprop="sameAs" class="button" target="_blank" href="https://github.com/mgiuffrida"><img title="Github" src="images/GitHub-Mark-64px.png" alt="GitHub"><span class="label">Github</span></a></li>
+      <li><a itemprop="sameAs" class="button" target="_blank" href="https://www.linkedin.com/in/mgiuffrida"><img title="LinkedIn" src="images/linkedin.png" alt="LinkedIn"><span class="label">LinkedIn</span></a></li>
+      <li><a itemprop="sameAs" class="button" target="_blank" href="https://facebook.com/mgiuffrida"><img title="Facebook" src="images/fb.png" alt="Facebook"><span class="label">Facebook</span></a></li>
+      <li><a class="button" target="_blank" href="https://codereview.chromium.org/search?closed=1&owner=michaelpg%40chromium.org&reviewer=&cc=&repo_guid=&base=&private=1&commit=1&created_before=&created_after=&modified_before=&modified_after=&order=&format=html&keys_only=False&with_messages=False&cursor=&limit=30"><img title="Chromium" src="images/chromium_64.png" alt="Chromium commits"><span class="label">Chromium</span></a></li>
     </ul>
 
-</div> <!-- resume -->
+    <p>C&#111;nt&#97;ct: <a href="http://www.google.com/recaptcha/mailhide/d?k=01z5jbOeEVSwfVRHJegaR07A==&amp;c=24TspmqjQaRoBcHyyZ6xPtuyTSL2zwNH04y4O22IEPw=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501z5jbOeEVSwfVRHJegaR07A\75\75\46c\07524TspmqjQaRoBcHyyZ6xPtuyTSL2zwNH04y4O22IEPw\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">m...</a>@mgiuffrida.com</p>
 
-<div id="projects">
+  </section> <!-- intro -->
 
-  <h2>Projects</h2>
+  <div class="timeline">
+    <a itemprop="sameAs" class="twitter-timeline" data-height="600" data-theme="light" data-link-color="#b80c00" href="https://twitter.com/mgiuffrida">Tweets by mgiuffrida</a>
+    <script id="twitterScript" data-src="//platform.twitter.com/widgets.js"></script>
+  </div>
 
-  <p>Some projects from Yale.</p>
+  </div> <!-- info-panel -->
 
-  <p><strong><a class="plain" href="http://mgiuffrida.com/ssk">SSK (senior project in machine learning)</a>:</strong> <a href="http://mgiuffrida.com/ssk">String Subsequence Kernel for Text Classification</a></p>
+  <div id="details-panel">
 
-  <p><strong><a class="plain" href="http://mgiuffrida.com/game">Sphere Killer</a>:</strong> <a href="http://mgiuffrida.com/game">Basic shooter game</a> using OpenGL for CPSC 478, Computer Graphics.</p>
+  <section id="resume">
+    <h2>Resume</h2>
 
-  <p><strong><a class="plain" href="http://mgiuffrida.com/privacy">Privacy Icons</a>:</strong> Prototype <a href="http://mgiuffrida.com/privacy">privacy icon database</a> extension for <a target="_blank" href="http://www.yalelawtech.org/cpt/">CPSC 185, Control, Privacy & Technology</a>.</p>
+    <p><a href="mgiuffrida_resume.pdf">Download resume (PDF)</a> or contact for more details</p>
 
-</div> <!-- projects -->
+    <section>
+      <h3>Education</h3>
 
-<div class="timeline">
-  <a class="twitter-timeline" data-height="600" data-theme="light" data-link-color="#b80c00" href="https://twitter.com/mgiuffrida">Tweets by mgiuffrida</a>
-</div>
+      <p itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+        <strong><span itemprop="name">Yale University</span>:</strong>
+        <abbr title="Bachelor of Science in">B.S.</abbr>
+        <span itemprop="department" itemscope itemtype="http://schema.org/Organization">
+          <span itemprop="name">Computer Science</span>, 2013
+        </span>
+      </p>
+    </section>
 
-</div> <!-- content -->
+    <section>
+      <h3>Work</h3>
 
-</div> <!-- outer -->
+      <p>
+        <span class="place">Google</span>
+        <span class="titles">
+          <span>Software Engineer <span class="date">Fall 2013 - present</span></span>
+        </span>
+      </p>
+
+      <p class="details">Developing the next generation of user experiences with Chrome and Chrome OS.</p>
+
+      <p>
+        <span class="place">Microsoft</span> <span class="titles">Software Development Engineer Intern</span>
+      </p>
+      <ul class="details">
+        <li>Summer 2012: New features for Windows 8 People app</li>
+        <li>Summer 2011: UI and logic for Windows 8 Calendar app (creating events and sending invites)</li>
+        <li>Summer 2010: UI for Windows Live Messenger</li>
+      </ul>
+
+      <p>
+        <span class="place">Yale University</span>
+        <span class="titles">
+          <span>Peer Tutor <span class="date">Spring 2013</span></span>
+          <span>Student Tech <span class="date">~2010 - 2011</span></span>
+        </span>
+      </p>
+    </section>
+
+    <section itemscope itemtype="http://schema.org/ItemList">
+      <h3 itemprop="name">Coding</h3>
+      <ul>
+        <li itemprop="itemListElement">Experienced in C, C++, JavaScript, CSS</li>
+        <li itemprop="itemListElement">Moderately experienced with Python, PHP, SQL</li>
+        <li itemprop="itemListElement">Previous experience includes C# and Java, among others.</li>
+      </ul>
+    </section>
+  </section> <!-- resume -->
+
+  <div id="projects">
+
+    <section>
+      <h2>Projects</h2>
+      <p>Some projects from Yale.</p>
+
+      <p>
+        <strong><a class="plain" href="http://mgiuffrida.com/ssk">SSK (senior project in machine learning)</a>:</strong>
+        <a href="http://mgiuffrida.com/ssk">String Subsequence Kernel for Text Classification</a>
+      </p>
+
+      <p>
+        <strong><a class="plain" href="http://mgiuffrida.com/game">Sphere Killer</a>:</strong>
+        <a href="http://mgiuffrida.com/game">Basic shooter game</a> using OpenGL for CPSC 478, Computer Graphics.
+      </p>
+
+      <p>
+        <strong><a class="plain" href="http://mgiuffrida.com/privacy">Privacy Icons</a>:</strong>
+        Prototype <a href="http://mgiuffrida.com/privacy">privacy icon database</a> extension for <a target="_blank" href="http://www.yalelawtech.org/cpt/">CPSC 185, Control, Privacy & Technology</a>.
+      </p>
+    </section>
+
+  </div> <!-- projects -->
+
+  <div class="timeline">
+    <a class="twitter-timeline" data-height="600" data-theme="light" data-link-color="#b80c00" href="https://twitter.com/mgiuffrida">Tweets by mgiuffrida</a>
+  </div>
+
+  </div> <!-- details-panel -->
+
+</main>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,8 +1,8 @@
-#outer {
+main {
   flex-direction: column;
 }
 
-#vitals {
+#info-panel {
   flex: initial;
   margin-right: initial;
 }
@@ -35,7 +35,7 @@ h1 {
   -webkit-margin-before: 0.3em;
 }
 
-#right .timeline {
+#details-panel .timeline {
   display: block;
 }
 
@@ -45,6 +45,6 @@ h1 {
   display: flex;
 }
 
-h3 + ul {
+#resume h3 + ul {
   margin-left: 1.5em;
 }

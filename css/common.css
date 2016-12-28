@@ -35,17 +35,17 @@ body {
   display: flex;
 }
 
-#outer {
+main {
   display: flex;
   padding: 18px;
 }
 
-#vitals {
+#info-panel {
   margin-right: 18px;
   flex: 0 0 400px;
 }
 
-#right {
+#details-panel {
   vertical-align: top;
   position: relative;
   display: inline-block;
@@ -53,21 +53,10 @@ body {
   max-width: 1000px;
 }
 
-#vitals > div {
+main > div > div,
+main > div > aside,
+main > div > section {
   padding: 15px;
-}
-
-#vitals #intro {
-  padding-top: 10px;
-}
-
-#right > div {
-  padding: 15px;
-}
-
-#header,
-#vitals > div,
-#right > div {
   background-color: #ffffff;
   margin-bottom: 20px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
@@ -76,20 +65,24 @@ body {
   border-radius: 2px;
 }
 
+#info-panel #intro {
+  padding-top: 10px;
+}
+
 p {
   margin-bottom: 0;
 }
 
-#intro heading {
+#intro header {
   /* Ensure my name doesn't wrap. Normally the pane is wide enough, but not for
    * the fallback font. */
   white-space: nowrap;
 }
 
-h2.heading-title {
-  margin-bottom: 0;
-  font-size: inherit;
+p.heading-title {
   margin-top: 10px;
+  font-size: inherit;
+  font-weight: bold;
 }
 
 :not(li) > ul {
@@ -117,10 +110,6 @@ ul {
   margin-bottom: 0;
 }
 
-h3 + ul {
-  margin-top: 0.5em;
-}
-
 h1 {
   font-size: 48px;
   margin-top: 0;
@@ -136,13 +125,17 @@ h2, h3 {
   margin-top: .5em;
 }
 
-#resume h3 {
+#resume section h3 {
   border-top: 1px solid #e8e8e8;
-  font-size: 1.5em;
-  font-weight: 600;
   margin-bottom: 0;
   margin-top: .5em;
   padding-top: 15px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#resume section h3 + ul {
+  margin-top: 0.5em;
 }
 
 #resume .details {
