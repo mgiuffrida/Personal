@@ -65,6 +65,10 @@ main > div > section {
   border-radius: 2px;
 }
 
+main > div footer {
+  font-size: 0.889em;
+}
+
 #info-panel #intro {
   padding-top: 10px;
 }
@@ -125,24 +129,37 @@ h2, h3 {
   margin-top: .5em;
 }
 
-#resume section h3 {
+#resume section h3,
+main > div footer {
   border-top: 1px solid #e8e8e8;
   margin-bottom: 0;
   margin-top: .5em;
-  padding-top: 15px;
+}
+
+#resume section h3 {
   font-size: 1.5em;
   font-weight: 600;
+  padding-top: 15px;
+}
+
+#resume section:first-of-type h3 {
+  border-top: 0;
+  padding-top: 0;
+}
+
+main > div footer {
+  padding-top: 5px;
 }
 
 #resume section h3 + ul {
   margin-top: 0.5em;
 }
 
-#resume .details {
+#resume section > ul {
   margin-top: 0;
   margin-left: 1.7045em;
   padding: 0;
-  font-size: 88%;
+  font-size: 0.889em;
 }
 
 #resume .place {

@@ -7,12 +7,6 @@ main {
   margin-right: initial;
 }
 
-h1 {
-  font-size: 48px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 #intro ul {
   display: flex;
   flex-wrap: wrap;
