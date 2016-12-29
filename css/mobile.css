@@ -13,7 +13,7 @@ main {
 }
 
 #intro ul li {
-  margin-right: 0.5em;
+  margin-right: 9px;
 }
 
 #intro ul li a {
@@ -26,19 +26,19 @@ main {
 }
 
 #intro ul + p {
-  -webkit-margin-before: 0.3em;
+  -webkit-margin-before: 5px;
 }
 
 #details-panel .timeline {
   display: block;
 }
 
-#resume .titles {
+#details-panel > section .titles {
   font-weight: 600;
-  margin-left: 1.5em;
+  margin-left: 24px;
   display: flex;
 }
 
-#resume h3 + ul {
-  margin-left: 1.5em;
+#details-panel > section h3 + ul {
+  margin-left: 24px;
 }

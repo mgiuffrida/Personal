@@ -65,7 +65,7 @@ main > div > section {
   border-radius: 2px;
 }
 
-main > div footer {
+#details-panel > section footer {
   font-size: 0.889em;
 }
 
@@ -83,9 +83,8 @@ p {
   white-space: nowrap;
 }
 
-p.heading-title {
+.intro-summary {
   margin-top: 10px;
-  font-size: inherit;
   font-weight: bold;
 }
 
@@ -102,7 +101,7 @@ p.heading-title {
 }
 
 #intro ul li img {
-  margin-right: .5em;
+  margin-right: 9px;
 }
 
 #intro ul li a {
@@ -114,61 +113,63 @@ ul {
   margin-bottom: 0;
 }
 
-h1 {
+#info-name {
+  color: #b80c00;
   font-size: 48px;
-  margin-top: 0;
-  margin-bottom: 0;
+  font-weight: bold;
+  margin: 0;
 }
 
 h2, h3 {
   margin-top: 0;
-  margin-bottom: .5em;
+  margin-bottom: 15px;
 }
 
-#resume p {
-  margin-top: .5em;
+#details-panel > section section p {
+  margin-top: 9px;
 }
 
-#resume section h3,
-main > div footer {
+/* Separators in content cards. */
+#details-panel > section h3,
+#details-panel > section footer {
   border-top: 1px solid #e8e8e8;
   margin-bottom: 0;
-  margin-top: .5em;
+  margin-top: 15px;
 }
 
-#resume section h3 {
+#details-panel > section section h3 {
   font-size: 1.5em;
   font-weight: 600;
   padding-top: 15px;
 }
 
-#resume section:first-of-type h3 {
+#details-panel > section section:first-of-type h3 {
   border-top: 0;
   padding-top: 0;
 }
 
-main > div footer {
+#details-panel > section footer {
   padding-top: 5px;
 }
 
-#resume section h3 + ul {
-  margin-top: 0.5em;
+#details-panel > section section h3 + ul {
+  margin-top: 9px;
 }
 
-#resume section > ul {
+#details-panel > section section > ul {
   margin-top: 0;
-  margin-left: 1.7045em;
+  margin-left: 24px;/* TODO: scaling */
   padding: 0;
   font-size: 0.889em;
 }
 
-#resume .place {
+#details-panel > section .place {
   display: inline-block;
   vertical-align: top;
   font-weight: bold;
 }
 
-#resume .titles {
+#details-panel > section .titles {
   display: inline-flex;
   flex-direction: column;
 }
