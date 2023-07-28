@@ -34,11 +34,13 @@
     var script = document.querySelector('#twitterScript');
     script.src = script.dataset['src'];
     script.onload = function() {
-      setTimeout(function() {
-        requestAnimationFrame(function() {
-          document.querySelector('iframe').setAttribute('tabindex', '-1');
-        });
-      }, 100);
+      for (let i = 0; i < 5; i++) {
+        setTimeout(function() {
+          requestAnimationFrame(function() {
+            document.querySelector('iframe').setAttribute('tabindex', '-1');
+          });
+        }, 1000 * (i + 1));
+      }
     };
   }
 
